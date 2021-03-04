@@ -1,0 +1,113 @@
+*** The active routes ***
+=======================================================
+**courseController operations
+=======================================================
+1) For fetching all course list
+-------------------------------
+url     :   "http://127.0.0.1:8000/api/v1/courseList"
+method  :   "GET"
+
+
+2) For store a perticuler course details
+------------------------------------------
+url     :   "http://127.0.0.1:8000/api/v1/courseStore"
+method  :   "POST"
+post field: "['Course_name' => ['required','max:255']]"
+
+
+
+3) For getting a perticuler course details
+------------------------------------------
+url     :   "http://127.0.0.1:8000/api/v1/courseShow/{id}"
+method  :   "GET"
+
+where, {id} is an intiger .
+like, http://127.0.0.1:8000/api/v1/courseShow/1
+
+
+
+4) For update a perticuler course details
+------------------------------------------
+url     :   "http://127.0.0.1:8000/api/v1/courseUpdate/{id}"
+method  :   "PUT"
+post field: "['Course_name' => ['required','max:255']]"
+
+where, {id} is an intiger .
+like, http://127.0.0.1:8000/api/v1/courseUpdate/1
+
+
+
+
+5) For delete a perticuler course details
+------------------------------------------
+url     :   "http://127.0.0.1:8000/api/v1/courseDestroy/{id}"
+method  :   "DELETE"
+
+where, {id} is an intiger .
+like, http://127.0.0.1:8000/api/v1/courseDestroy/1
+
+
+
+=======================================================
+**studentController operations
+=======================================================
+1) For fetching all course list
+-------------------------------
+url     :   "http://127.0.0.1:8000/api/v1/studentList"
+method  :   "GET"
+
+
+2) For store a perticuler course details
+------------------------------------------
+url     :   "http://127.0.0.1:8000/api/v1/studentStore"
+method  :   "POST"
+post field: "[  'first_name' => ['required','max:255'],
+                'Last_name' => ['required','max:255'],
+                'Course_id' => ['required','intiger'],
+                'Date_of_joining' => ['required','date']]"
+
+
+
+3) For getting a perticuler course details
+------------------------------------------
+url     :   "http://127.0.0.1:8000/api/v1/courseShow/{id}"
+method  :   "GET"
+
+where, {id} is an intiger .
+like, http://127.0.0.1:8000/api/v1/courseShow/1
+
+
+
+4) For update a perticuler course details
+------------------------------------------
+url     :   "http://127.0.0.1:8000/api/v1/studentUpdate/{id}"
+method  :   "PUT"
+post field: "[  'first_name' => ['required','max:255'],
+                'Last_name' => ['required','max:255'],
+                'Course_id' => ['required','intiger'],
+                'Date_of_joining' => ['required','date']]"
+
+where, {id} is an intiger .
+like, http://127.0.0.1:8000/api/v1/studentUpdate/1
+
+
+
+
+5) For delete a perticuler course details
+------------------------------------------
+url     :   "http://127.0.0.1:8000/api/v1/studentDestroy/{id}"
+method  :   "DELETE"
+
+where, {id} is an intiger .
+like, http://127.0.0.1:8000/api/v1/studentDestroy/1
+
+
+5) For delete a perticuler course details
+------------------------------------------
+url     :   "http://127.0.0.1:8000/api/v1/studentFilter"
+method  :   "POST"
+
+post field: "[  'first_name' => ['optional','max:255'],
+                'Last_name' => ['optional','max:255'],
+                'Course_name' => ['optional','intiger'],
+                'Date_of_joining' => ['optional','date']]"
