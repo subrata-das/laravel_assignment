@@ -51,13 +51,13 @@ like, http://127.0.0.1:8000/api/v1/courseDestroy/1
 =======================================================
 **studentController operations
 =======================================================
-1) For fetching all course list
+1) For fetching all student list
 -------------------------------
 url     :   "http://127.0.0.1:8000/api/v1/studentList"
 method  :   "GET"
 
 
-2) For store a perticuler course details
+2) For store a perticuler student details
 ------------------------------------------
 url     :   "http://127.0.0.1:8000/api/v1/studentStore"
 method  :   "POST"
@@ -68,7 +68,7 @@ post field: "[  'first_name' => ['required','max:255'],
 
 
 
-3) For getting a perticuler course details
+3) For getting a perticuler student details
 ------------------------------------------
 url     :   "http://127.0.0.1:8000/api/v1/courseShow/{id}"
 method  :   "GET"
@@ -78,7 +78,7 @@ like, http://127.0.0.1:8000/api/v1/courseShow/1
 
 
 
-4) For update a perticuler course details
+4) For update a perticuler student details
 ------------------------------------------
 url     :   "http://127.0.0.1:8000/api/v1/studentUpdate/{id}"
 method  :   "PUT"
@@ -93,7 +93,7 @@ like, http://127.0.0.1:8000/api/v1/studentUpdate/1
 
 
 
-5) For delete a perticuler course details
+5) For delete a perticuler student details
 ------------------------------------------
 url     :   "http://127.0.0.1:8000/api/v1/studentDestroy/{id}"
 method  :   "DELETE"
@@ -102,7 +102,7 @@ where, {id} is an intiger .
 like, http://127.0.0.1:8000/api/v1/studentDestroy/1
 
 
-5) For delete a perticuler course details
+6) For filter a perticuler student details
 ------------------------------------------
 url     :   "http://127.0.0.1:8000/api/v1/studentFilter"
 method  :   "POST"
